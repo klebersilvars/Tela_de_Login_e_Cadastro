@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #38023B;
+    --button: #A288E3;
+    --textos: #B04EB5;
+}
+
+.main {
+    background-color: var(--background);
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registro__container {
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    width: 400px;
+    height: 380px;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.39);
+}
+
+.register__title {
+    text-align: center;
+    font-size: 32px;
+    color: var(--textos);
+    padding-top: 15px;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input__name {
+    margin-top: 18px;
+    width: 70%;
+    padding-left: 5px;
+    height: 30px;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #bdbdbd; 
+    outline: none;
+    font-size: 16px;  
+}
+
+.input__name:focus {
+    width: 70%;
+    transition: 0.3s ease-in-out;
+    border-bottom: 2px solid var(--button);
+}
+
+.input__email {
+    margin-top: 18px;
+    width: 70%;
+    padding-left: 5px;
+    height: 30px;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #bdbdbd; 
+    outline: none;
+    font-size: 16px;  
+}
+
+.input__email:focus {
+    width: 70%;
+    transition: 0.3s ease-in-out;
+    border-bottom: 2px solid var(--button);
+}
+
+.input__pass {
+    margin-top: 18px;
+    width: 70%;
+    padding-left: 5px;
+    height: 30px;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #bdbdbd; 
+    outline: none;
+    font-size: 16px;  
+}
+
+.input__pass:focus {
+    width: 70%;
+    transition: 0.3s ease-in-out;
+    border-bottom: 2px solid var(--button);
+}
+
+.input__confirmPass {
+    margin-top: 18px;
+    width: 70%;
+    height: 30px;
+    padding-left: 5px;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #bdbdbd; 
+    outline: none;
+    font-size: 16px;  
+}
+
+.input__confirmPass:focus {
+    width: 70%;
+    transition: 0.3s ease-in-out;
+    border-bottom: 2px solid var(--button);
+}
+
+.btn__registrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+
+    height: 40px;
+    width: 200px;
+    border: unset;
+    
+    background-color: var(--button);
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 19px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.404);
+}
+
+.btn__registrar:hover {
+    background-color: var(--background);
+    transition-duration: 0.6s;
+    color: white;
+}
+
+.link__login {
+    text-align: center; 
+    color: var(--background);
+    padding-top: 5px;
+}
+
+/*ERROS DOS SPANS DE ERROS */
+.span__errorEmail, .span__errorName, .span__errorPass, .span__errorConfirmPass{
+    font-size: 13px;
+    font-weight: bold;
+}
+/*ERROS DOS SPANS DE ERROS */
+
